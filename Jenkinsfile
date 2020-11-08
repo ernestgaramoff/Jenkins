@@ -9,7 +9,7 @@ pipeline {
         stage('clone') {
             steps {
                 script {
-                    sh "git@github.com:ernestgaramoff/Jenkins.git"
+                    echo "Trying to connect to Github repo"
                 }
             }
         }
