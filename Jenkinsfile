@@ -1,11 +1,7 @@
 #!groovy
 
 pipeline {
-    agent { label 'master' }
-    triggers { pollSCM('* * * * *') }
-    tools {
-        maven 'maven'
-    }
+    agent any
         stage('clone') {
             steps {
                 script {
