@@ -5,7 +5,7 @@ pipeline {
     stages{
         stage('clone') {
             steps {
-                echo "Trying to connect to Github repo"   
+                sh 'docker build -t  project_template/Dockerfile'  
             }
         }
     }
